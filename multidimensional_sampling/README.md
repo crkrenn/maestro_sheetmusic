@@ -1,23 +1,26 @@
 # Multidimensional sampling using scisample
 
-This repo contains a pgen script for maestro that implements several
-multidimensional sampling methods which are driven by a simple yaml
-specification included in the env/variables section of any maestro
-specification. This yaml specification is a nested list named
-`SAMPLE_DICTIONARY`, and this repo contains several examples. 
+This repo contains several yaml specifications that implement
+multidimensional sampling methods from the `scisample` package.
+The sampling parameters are defined in the env/variables section 
+of a given maestro specification. This yaml specification is a nested 
+list named `SAMPLE_DICTIONARY`.
 
 It requires the [`scisample` package](https://github.com/LLNL/scisample) 
-to be installed. Some sampling methods require additional packages to
+to be installed. The `scisample` provides a `pgen_scisample.py` script 
+that can be easily used with maestro with "--pgen `which pgen_scisample.py`". 
+Some sampling methods require additional packages to
 be installed. The `best_candidate` method requires `pandas`, `numpy`, and
 `scipy`. 
 
 `maestro` using `scisample` is executed as follows:
  
 ```
-maestro run [-y] --pgen ./pgen_sample.py {sample_list.yaml},
+maestro run [-y] --pgen `which pgen_scisample.py` {sample_list.yaml},
 ```
 
-where `[-y]` is an optional `auto-run` option, and `sample_list.yaml` is a maestro specification containing a `SAMPLE_DICTIONARY`.  
+where `[-y]` is an optional `auto-run` option, and `sample_list.yaml` is a maestro 
+specification containing a `SAMPLE_DICTIONARY`.  
 
 `pgen_sample.py` currently supports four sampling modes:
 
