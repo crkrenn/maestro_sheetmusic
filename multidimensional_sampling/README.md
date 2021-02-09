@@ -49,7 +49,7 @@ SAMPLE_DICTIONARY:
         X1: [ 5, 10 ]
         X2: [ 5, 10 ]
 ```
-is equivalent to the following Maestro global.parameter block:
+is equivalent to the following Maestro `global.parameter` block:
 
 ```yaml
 global.parameters:
@@ -85,7 +85,7 @@ SAMPLE_DICTIONARY:
         5   5
         10  10
 ```
-is also equivalent to the following Maestro global.parameter block:
+is also equivalent to the following Maestro `global.parameter` block:
 
 ```yaml
 global.parameters:
@@ -121,7 +121,7 @@ SAMPLE_DICTIONARY:
         X2: [ 5, 10 ]
         X3: [ 5, 10 ]
 ```
-is also equivalent to the following Maestro global.parameter block:
+is also equivalent to the following Maestro `global.parameter` block:
 
 ```yaml
 global.parameters:
@@ -166,7 +166,8 @@ SAMPLE_DICTIONARY:
            min: 10
            max: 50
 ```
-will produce different results each time it is run. Below is an example of an equivalent Maestro global.parameter block:
+will produce different results each time it is run. Below is an example of an 
+equivalent Maestro `global.parameter` block:
 
 ```yaml
 global.parameters:
