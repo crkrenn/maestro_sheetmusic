@@ -8,7 +8,7 @@ list named `SAMPLE_DICTIONARY`.
 
 It requires the [`scisample` package](https://github.com/LLNL/scisample) 
 to be installed. The `scisample` provides a `pgen_scisample.py` script 
-that can be easily used with maestro with "--pgen `which pgen_scisample.py`". 
+that can be easily used with maestro with `--pgen `\``which pgen_scisample.py`\`. 
 Some sampling methods require additional packages to
 be installed. The `best_candidate` method requires `pandas`, `numpy`, and
 `scipy`. 
@@ -40,7 +40,7 @@ and one value.
 
 The following sample dictionary
 
-```
+```yaml
 SAMPLE_DICTIONARY:
     type: list
     constants:
